@@ -1,0 +1,25 @@
+{
+  "name": "form-validation-exercise",
+  "version": "1.0.0",
+  "description": "TOP-Exercise",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx @biomejs/biome format --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taikimen52/form-validation-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taikimen52/form-validation-exercise/issues"
+  },
+  "homepage": "https://github.com/taikimen52/form-validation-exercise#readme",
+  "devDependencies": {
+		"@biomejs/biome": "^2.3.4"
+	}
+
+}

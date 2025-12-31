@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="rules.js" type="module" defer></script>
+    <script src="script.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <form action="" id="form" novalidate>
+            <!-- Email, Country, Postal Code, Password and Password Confirmation fields -->
+            <p>
+               <label for="email">E-mail ※</label>
+                <input type="email" name="email" id="email" required>
+                <span class="email error-message"></span>
+            </p>
+            <p>
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" pattern="^[a-zA-Z]+$">
+                <span class="country error-message" id="country-error"></span>
+            </p>
+            <p>
+                <label for="postalcode">Postal Code</label>
+                <input type="text" name="postalcode" id="postalcode" pattern="^[0-9]{3}-[0-9]{4}$">
+                <span class="postalcode error-message" id="postal-error"></span>
+            </p>
+            <p>
+                <label for="password">Password ※</label>
+                <input type="password" name="password" id="password" minlength="8" maxlength="16" required>
+                <span class="password error-message" id="password-error"></span>
+            </p>
+            <p>
+                <label for="verify-pass">Password(Verify) ※</label>
+                <input type="password" name="verify-pass" id="verify-pass" minlength="8" maxlength="16" required>
+                <span class="password error-message" id="verify-pass-error"></span>
+            </p>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
