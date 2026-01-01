@@ -1,12 +1,6 @@
-import {rules, validateField} from "./rules.js"
+import {validateField, validateForm} from "./rules.js"
 
-// 各input要素・form要素を取得
-const email = document.getElementById("email");
-const country = document.getElementById("country");
-const postalCode = document.getElementById("postal-code");
-const password = document.getElementById("password");
-const verifyPass = document.getElementById("verify-pass");
-
+// form要素の取得
 const form = document.getElementById("form")
 
 function handleInput(eTarget) {
@@ -15,7 +9,7 @@ function handleInput(eTarget) {
 
 function handleSubmit(e) {
     e.preventDefault();
-    validateField(e.target);
+    validateForm(e.currentTarget)
 }
 
 form.addEventListener("input", (e) => {
